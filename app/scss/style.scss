@@ -1,0 +1,73 @@
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "vars";
+@import "global";
+
+@import "components/button";
+@import "components/header";
+@import "components/catalog";
+@import "components/form";
+@import "components/user-nav";
+@import "components/button-nav";
+@import "components/cart-list";
+@import "components/slider";
+@import "components/slick";
+@import "components/top";
+@import "components/category";
+@import "components/service";
+@import "components/footer";
+@import "components/contacts";
+@import "components/social";
+@import "components/payment";
+
+.main {
+  flex-grow: 1;
+}
+
+.logo {
+  z-index: 1;
+  &__img {
+    display: inline;
+  }
+}
+
+.btn-minus,
+.btn-plus {
+  color: transparent;
+  min-width: 24px;
+  height: 24px;
+  background-color: $color-main--dark;
+}
+
+.btn-minus {
+  position: relative;
+  border-radius: 3px 0px 0px 3px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-image: url("../images/icons/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn-plus {
+  position: relative;
+  border-radius: 0px 3px 3px 0px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-image: url("../images/icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px;
+    height: 16px;
+  }
+}

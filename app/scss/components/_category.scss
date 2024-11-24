@@ -1,0 +1,30 @@
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: box-shadow, color, border-bottom 0.3s;
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $color-main--light;
+    }
+
+    &:hover {
+      color: $color-main--dark;
+    }
+
+    &:active {
+      border-bottom: 3px solid $color-main--light;
+    }
+  }
+}
